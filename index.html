@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logocontent">
+            <img src="https://www.shareicon.net/data/2016/06/20/606964_github_4096x4096.png" alt="logo github" class="logo">
+        </div>
+        <h1 class="h1">Searh profile in github</h1>
+    </nav>
+
+    <main class="main">
+        <section id="profile" class="profile dont">
+            <div class="profile__photo">
+                <img id="avatar" src="./profile-image.png" alt="profile photo">
+            </div>
+            <div class="profile__data">
+                <div>
+                    <p  class="profile__text">Name: <span id="name" class="profile__span">Kamerr Ezz</span></p>
+                    <p  class="profile__text">company: <span id="company" class="profile__span">KamerrStudios</span></p>
+                    <p  class="profile__text">Bio: <span id="bio" class="profile__span">Desarrollador Web y Diseñador Grafico</span></p>
+                    <p  class="profile__text">Twitter: <span id="twitter" class="profile__span">KamerrEzz</span></p>
+                    <p id="created"  class="profile__text">Created: <span id="twitter" class="profile__span">KamerrEzz</span></p>
+                </div>
+                <div class="socialcontent">
+                    <div class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7a.75.75 0 0 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1h8zM5 12.25v3.25a.25.25 0 0 0 .4.2l1.45-1.087a.25.25 0 0 1 .3 0L8.6 15.7a.25.25 0 0 0 .4-.2v-3.25a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25z" fill="#f0f6fc"/><rect x="0" y="0" width="16" height="16" fill="rgba(0, 0, 0, 0)" /></svg> <span id="repo">1</span>
+                    </div>
+                    <div class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg)" transform="rotate(360)"><path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z" fill="#f0f6fc"/><path fill="rgba(0, 0, 0, 0)" d="M0 0h16v16H0z"/></svg> <span id="follow">14</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search">
+                    <input id="searchUser" name="searchUser" class="search__input" type="text" placeholder="Search..." autocomplete="off">
+                    <button onclick="getUser()" class="search__btn">Jump</button>
+
+                    <div id="dontUser" class="dontUser dont">
+                        Usuario No encontrado
+                    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Grupo de estudio python con frondendcafe</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
